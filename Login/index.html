@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset='UTF-8' />
+        <title>Formulario | Site</title>
+        <link rel='stylesheet' href='./index.css'/>
+    </head>
+    <body>
+        <main class='login'>
+            <section>
+                <form onsubmit="alert('Logado com sucesso!')" method="GET">
+                    <h1>ENTRAR</h1>
+                    <img src='./image/user.png' id='user-img' alt='Usuario'/>
+                    <input type='text' id='user' placeholder='Usuário' required/>
+                    <img src='./image/lock.png' id='password-img' alt='Cadeado'/>
+                    <input type='password' id='password' placeholder='Senha' required/>
+                    <input type="checkbox" checked id='remember' />
+                    <span>Lembrar-me</span>
+                    <input type='submit' value='ENTRAR' />
+                    <span>Ou entre com:</span>
+                    <div>
+                        <button id='google'><div><img src='./image/facebook.png' alt='Logo Facebook' /><span>Facebook</span></div></button>
+                        <button id='google'><div><img src='./image/google.png' alt='Logo Google' /><span>Google</span></div></button>
+                    </div>
+                    <span>Não tem um cadastro? <a href='#'>Cadastre&nbsp;-&nbsp;se&nbsp;já</a></span>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
