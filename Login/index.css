@@ -80,7 +80,7 @@ body{
 }
 .login #user-img, #password-img{
     position: absolute;
-    transform: translate(50%, 185%);
+    transform: translate(50%, 195%);
     width: 20px;
     height: 20px;
 }
