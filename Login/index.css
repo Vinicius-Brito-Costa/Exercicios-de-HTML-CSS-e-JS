@@ -93,29 +93,29 @@ body{
     width: 20px;
     transform: translateY(20%);
 }
-span{
+.login span{
     font-family: 'Inter';
     font-size: 18px;
     color: var(--login-text-color);
 }
-span:nth-of-type(2){
+.login span:nth-of-type(2){
     margin-top: 80px;
     margin-bottom: 40px;
     display: block;
     text-align: center;
 }
-span:nth-of-type(3){
+.login span:nth-of-type(3){
     position: absolute;
     width: 100%;
     bottom: -5%;
     display: block;
     text-align: center;
 }
-span:nth-of-type(3) a{
+.login span:nth-of-type(3) a{
     color: rgb(128, 128, 128);
     font-weight: bold;
 }
-span:nth-of-type(3) a:hover{
+.login span:nth-of-type(3) a:hover{
     font-weight: normal;
 }
 .login form div{
@@ -179,13 +179,13 @@ span:nth-of-type(3) a:hover{
     .login button div span{
         font-size: 14px;
     }
-    span:nth-of-type(2){
+    .login span:nth-of-type(2){
         margin-top: 20px;
         margin-bottom: 10px;
         display: block;
         text-align: center;
     }
-    span:nth-of-type(3){
+    .login span:nth-of-type(3){
         position: absolute;
         width: 100%;
         bottom: -20%;
