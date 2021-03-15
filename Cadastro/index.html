@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastre-se | Site</title>
+        <link rel='stylesheet' href='./css/index.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <section class='formulario'>
+                <form>
+                    <div class='titulo'>
+                        <h1>Cadastro</h1>
+                        <h2>As plantas estão esperando! Cadastre-se.</h2>
+                    </div>
+                    <section>
+                        <div>
+                            <label for='nome'><span>Nome</span></label>
+                            <label for='email'><span>E-mail</span></label>
+                            <label for='data'><span>Data de nascimento</span></label>
+                            <label for='estado'><span>Estado</span></label>
+                            <label for='senha'><span>Senha</span></label>
+                            <label for='confSenha'><span>Confirme a senha</span></label>
+                        </div>
+                        <div>
+                            <input type='text' placeholder='Maria Joaquina' id='nome' class='input' required/>
+                            <input type='email' placeholder='mariaJoaquina@123.com' id='email' class='input' required/>
+                            <input type='date' placeholder='Dez 10, 2001' id='data' class='input' required/>
+                            <input type='text' placeholder='São Paulo' id='estado' class='input' required/>
+                            <input type='password' placeholder='Senha' id='senha' class='input' required/>
+                            <input type='password' placeholder='Senha' id='confSenha' class='input' required/>
+                            <button type='submit'>Cadastar</button>
+                        </div>
+                    </section>
+                </form>
+            </section>
+            <section class='flier'>
+                <div class='flier-overlay'>
+                    <header>
+                        <a href='#'>
+                            <img src='./image/list.svg' alt='botão de menu' />
+                        </a>
+                        <span>Culthive</span>
+                    </header>
+                    <main>
+                        <section>
+                            <span>TENHA MAIS PLANTAS</span>
+                            <h1>Culthive.</h1>
+                        </section>
+                        <span>PLANTE EM TODOS OS LUGARES</span>
+                    </main>
+                </div>
+                <img src='https://i.pinimg.com/736x/96/ff/b5/96ffb508b2326e307cb7f380c4cd113b.jpg' alt=''/>
+            </section>
+        </div>
+    </body>
+</html>
