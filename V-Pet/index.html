@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/index.css' />
+    <title>Digimon V-Pet</title>
+    <script src='./js/index.js' defer></script>
+</head>
+<body>
+    <main class='v-pet'>
+        <section class='v-pet-frame'>
+            <section>
+                <div>
+                    <img src='./image/stats/smile.gif' alt='status' id='status' />
+                </div>
+                <div>
+                    <img src='./image/digimon/Koromon.gif' alt='digimon' id='digimon' />
+                </div>
+            </section>
+        </section>
+        <section class='v-pet-buttons'>
+            <div>PESO: <span id='foodStat'>0</span></div>
+            <button id='food' onclick="FeedDigimon();">
+                <img src='./image/stats/hunger.gif' alt='Fome' />
+            </button>
+            <div>TREINO: <span id='trainStat'>0</span></div>
+            <button id='train' onclick="TrainDigimon();">
+                <img src='./image/stats/train.gif' alt='Treino' />
+            </button>
+            <div>TEMPO: <span id='timeStat'>00:00</span></div>
+            <a class='reset' onclick="Reset();"></a>
+        </section>
+        
+    </main>
+</body>
+</html>
