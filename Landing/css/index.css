@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        :root{
+            --bg-color: rgb(243, 243, 243);
+            --text-color: #e60012;
+            --text-color-hover: #ffc9ca;
+            --text-menu-size: 18px;
+            --text-title-size: 24px;
+            --text-subtitle-size: 20px;
+            --text-subtitle-color: #504748;
+        }
+        body{
+            font-family: 'Inter';
+            margin:0;
+            padding: 0;
+            background: var(--bg-color);
+        }
+        .landing{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .landing nav{
+            z-index: 2;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .landing nav div a{
+            position: relative;
+            margin: 0px 25px;
+            text-decoration: none;
+            font-size: var(--text-menu-size);
+            color: var(--text-color);
+            transition: .2s color ease-in-out;
+        }
+        .landing nav div a:hover{
+            color: var(--text-color-hover);
+        }
+        .landing nav div a img{
+            transition: .2s filter ease-in-out;
+            filter: invert(16%) sepia(70%) saturate(4646%) hue-rotate(345deg) brightness(89%) contrast(121%);
+            transform: translateY(18%);
+            width: 30px;
+        }
+        .landing nav div a:hover img{
+            filter: invert(93%) sepia(17%) saturate(1607%) hue-rotate(292deg) brightness(112%) contrast(108%);        }
+
+        #logo{
+            margin: 20px 25px;
+        }
+        #logo img{
+            width: 50px;
+        }
+        .landing main{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .landing main article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            margin: 0 35px;
+            max-width: 600px;
+            height: 100%;
+        }
+        .landing main article div{
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .landing main article div h1{
+            font-size: var(--text-title-size);
+            color:#e2080c;
+        }
+        .landing main article div p{
+            color: var(--text-subtitle-color);
+            font-size: var(--text-subtitle-size);
+            text-align: justify;
+        }
+        .landing main article div a{
+            color: var(--text-color);
+            font-size: var(--text-subtitle-size) -2;
+            text-decoration: none;
+            font-weight: bold;
+            width: 100px;
+        }
+        .landing main article div a:hover{
+            color: var(--text-color-hover);
+        }
+        .landing main article footer{
+            display: flex;
+            align-items: flex-end;
+            flex: 1;
+            margin-bottom: 5px;
+        }
+        .landing main article footer a img{
+            max-height: 20px;
+        }
+        .landing main div{
+            width: 100%;
+        }
+        #bg{
+            overflow: hidden;
+        }
+        #bg img{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: opacity(.5);
+        }
+        #character{
+            z-index: 1;
+            position: absolute;
+            top: 20%;
+            left: 60%;
+            width: auto;
+            animation: Mario 1s infinite alternate ease-in-out;
+        }
+        @keyframes Mario{
+            from {
+                transform: rotate(-.5deg);
+            }
+            to {
+                transform: rotate(.5deg);
+            }
+        }
