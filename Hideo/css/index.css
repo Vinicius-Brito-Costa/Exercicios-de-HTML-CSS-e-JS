@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --main-color: #191919;
+    --text-color: #c5c7c7;
+    --text-color-2: white;
+    --highlight-color: #324bcb;
+    --text-size-title: 250px;
+    --text-size-subtitle: 50px;
+    --text-size-links: 20px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+section{
+    height: 100vh;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu{
+    width: 95%;
+    height: 10%;
+}
+.menu nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu nav a{
+    font-size: var(--text-size-links);
+    font-family: 'Rajdhani';
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 55px;
+}
+.menu nav a:hover{
+    color: var(--text-color-2);
+}
+.menu nav a:last-of-type{
+    color: var(--highlight-color);
+}
+.menu nav a:last-of-type:hover{
+    color: var(--text-color-2);
+}
+#logo{
+    margin: 0;
+}
+#logo img{
+    height: 70px;
+    filter: invert();
+}
+.corpo{
+    height: 90%;
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.perfil{
+    width: 100%;
+    color: var(--text-color-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('../image/kojima.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.text{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.text span:nth-of-type(1){
+    font-family: 'Bebas Neue';
+    font-size: var(--text-size-title);
+    line-height: 180px;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-5px);
+}
+.text span:nth-of-type(2){
+    font-family: 'Rajdhani';
+    font-size: var(--text-size-subtitle);
+    color: var(--highlight-color)
+}
+.text span:nth-of-type(2)::after{
+    display: block;
+    content: "";
+    transform: translateX(-10%);
+    width: 50%;
+    height: 10px;
+    background-color: var(--highlight-color);
+}
+.preview{
+    height: auto;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.preview article{
+    height: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-start;
+    color: var(--text-color-2);
+}
+.preview article main{
+    font-family: 'Bebas Neue';
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.preview article img{
+    height: 70px;
+    border-radius: .35rem;
+}
+.preview article main h1{
+    vertical-align: bottom;
+    line-height: 85%;
+    height: 70%;
+    font-size: var(--text-size-subtitle);
+    margin: 0;
+}
+.preview article main a{
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+.preview article main a:hover{
+    color: var(--text-color-2);
+}
+.preview article main a span{
+    width: auto;
+    display: block;
+    font-family: 'Rajdhani';
+    font-size: var(--text-size-links);
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 600px) {
+    :root{
+        --main-color: #191919;
+        --text-color: #c5c7c7;
+        --text-color-2: white;
+        --highlight-color: #324bcb;
+        --text-size-title: 100px;
+        --text-size-subtitle: 30px;
+        --text-size-links: 15px;
+    }
+    #logo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #logo img{
+        height: 90%;
+    }
+    .menu nav div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .menu nav a{
+        font-size: var(--text-size-links);
+        font-family: 'Rajdhani';
+        color: var(--text-color);
+        text-decoration: none;
+        margin-left: 25px;
+    }
+    .menu nav a:nth-of-type(3){
+        display: none;
+    }
+    .corpo{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .perfil{
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .text{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 95%;
+    }
+    .text span:nth-of-type(1){
+        font-family: 'Bebas Neue';
+        font-size: var(--text-size-title);
+        line-height: 80px;
+    }
+    .text span:nth-of-type(2)::after{
+        display: block;
+        content: "";
+        transform: translateX(-36%);
+        width: 70%;
+        height: 10px;
+        background-color: var(--highlight-color);
+    }
+    .preview{
+        display: none;
+    }
+}
