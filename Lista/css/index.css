@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter&display=swap');
+:root{
+    --text-color-1: white;
+    --bg-color: #2b2b2b;
+    --main-container-color: #b5179e;
+    --color1: #f72585;
+    --color2: #3f37c9;
+    --color3: #4cc9f0;
+    --color4: #4895ef;
+    --radius: .20rem;
+}
+body{
+    font-family: 'Inter';
+    padding: 0;
+    margin: 0;
+    background: var(--bg-color);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tab-button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    color: var(--text-color-1);
+    background: var(--color2);
+    font-size: 20px;
+    font-weight: bold
+}
+.tab-button:disabled{
+    background: var(--color4);
+}
+.container{
+    margin: 0 20px;
+    width: 800px;
+}
+.list-container{
+    margin: 0;
+    padding: 0px;
+    background: var(--color4);
+    border-top-right-radius: var(--radius);
+}
+.list-container .list-item:nth-child(even){
+    background: rgba(0, 0, 0, 0.152);
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 0px;
+    margin: 0;
+}
+.list-item h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 10px;
+    width: 10%;
+}
+.list-item span{
+    font-size: 25px;
+    line-height: 25px;
+    width: 100%;
+    font-family: 'Architects Daughter';
+}
+#addTask{
+    margin: 0;
+    padding: 20px 5px 10px;
+    background: var(--color4);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+#addTask button{
+    width: 20%;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    color: white;
+    padding: 0 10px;
+    margin-right: 20px;
+    background: rgb(45, 194, 45);
+}
+#addTask button:hover{
+    background: rgb(71, 221, 71);
+}
+.list-item input{
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.59);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    outline: none;
+    text-indent: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Architects Daughter';
+}
+
+.list-item-complete{
+    position: relative;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 8%;
+    outline: none;
+}
+.list-item-complete img{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+.list-item-complete img:hover{
+   filter: saturate(150%);
+}
+.list-item-delete{
+    position: relative;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 1%;
+    outline: none;
+}
+.list-item-delete img{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+.list-item-delete img:hover{
+   filter: saturate(150%);
+}
+.list-item-readd{
+    position: relative;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 4%;
+    margin-left: 0%;
+    outline: none;
+}
+.list-item-readd img{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+.list-item-readd img:hover{
+   filter: saturate(150%);
+}
